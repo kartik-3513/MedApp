@@ -1,222 +1,258 @@
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-	background-color: #9cdaf8;
-	background-image: linear-gradient(315deg, #9cdaf8 0%, #98fcbd 74%);
+  background-color: #9cdaf8;
+  background-image: linear-gradient(to right, #49bfff, #2072ff);
 }
 
 .nav-bar {
-	display: flex;
-	width: 100%;
-	height: 5rem;
-	box-shadow: 0 15px 20px -10px darkgrey;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 10px 15px -10px darkgrey;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo {
-	width: 50%;
-	padding-left: 10px;
-	display: flex;
-	align-items: center;
+  width: 50%;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo h1 {
-	margin: 0 0.5rem;
-	text-decoration: none;
-	color: black;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-logo svg {
-	margin: 0 0.5rem;
-	text-decoration: none;
-	color: black;
-	width: 3.5rem;
+  margin: 1rem 1.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  width: 3rem;
 }
 
 ul.nav-list {
-	display: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	list-style-type: none;
-	flex-direction: column;
-	align-items: center;
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul.nav-list.active {
-	background-color: #9cdaf8;
-	background-image: linear-gradient(315deg, #9cdaf8 0%, #98fcbd 74%);
-	display: flex;
-	z-index: 1000;
-	position: absolute;
-	top: 5rem;
+  background-color: #9cdaf8;
+  background-image: linear-gradient(to right, #49bfff, #2072ff);
+  display: flex;
+  z-index: 1000;
+  position: absolute;
+  top: 4rem;
 }
 
 .nav-link {
-	margin-bottom: 0;
-	width: 70%;
-	text-align: center;
-	padding: 0 1rem;
-	cursor: pointer;
+  margin-bottom: 0;
+  width: 70%;
+  text-align: center;
+  padding: 0 1rem;
+  cursor: pointer;
 }
 
 .nav-link:hover {
-	border-bottom: 5px solid coral;
-	transition: all 80ms ease;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  transition: all 80ms ease;
 }
 
 .nav-link a {
-	display: block;
-	height: 100%;
-	font-size: 1.2rem;
-	line-height: 80px;
-	text-decoration: none;
-	color: #000;
+  display: block;
+  height: 100%;
+  font-size: 1.2rem;
+  line-height: 4rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-title {
+  color: rgb(0, 0, 0);
+  font-weight: normal;
 }
 
 #hamburger {
-	font-size: 2rem !important;
-	margin: 1rem;
-	color: black;
-	text-align: left;
-	cursor: pointer;
-	padding: 1.5rem;
+  font-size: 2rem !important;
+  margin: 1rem;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  padding: 1.5rem;
 }
-
+@media only screen and (max-width: 576px) {
+  .nav-logo svg {
+    margin: 0rem !important;
+  }
+  .nav-title {
+    margin-left: 0rem;
+    white-space: nowrap;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+}
 @media only screen and (min-width: 576px) {
-	#hamburger {
-		display: none;
-	}
-	ul.nav-list,
-	ul.nav-list.active {
-		display: flex;
-		flex-direction: row;
-		width: 50%;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-		justify-content: flex-end;
-		align-items: center;
-	}
-	ul.nav-list.active {
-		position: static;
-		background-color: transparent;
-		background-image: none;
-	}
-	.nav-link {
-		margin: 0 1rem;
-		width: fit-content;
-	}
+  #hamburger {
+    display: none;
+  }
+  ul.nav-list,
+  ul.nav-list.active {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  ul.nav-list.active {
+    position: static;
+    background-color: transparent;
+    background-image: none;
+  }
+  .nav-link {
+    margin: 0 1rem;
+    width: fit-content;
+  }
 }
 
 /*---------------------------------------------------------------*/
 
 main {
-	margin: 2.5rem 0 2rem;
-	padding: 1rem;
+  margin: 2rem 0 2rem;
 }
 
 #description {
-	text-align: center;
-	font-size: 1.2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
 
 .cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  justify-items: center;
 }
 
 .card {
-	padding: 1rem;
-	margin: 1rem;
-	display: flex;
-	flex-direction: column;
-	border: 3px solid;
-	box-shadow: -3px 3px 3px 2px #98fcbd;
-	align-items: center;
+  position: relative;
+  display: inline-block;
+  height: 23rem;
+  width: 15rem;
+  background: whitesmoke;
+  border-radius: 2rem;
 }
 
-.card-image {
-	height: 90px;
-	width: 90px;
-	border-radius: 50%;
-	align-self: center;
+.top {
+  height: 50%;
 }
 
-.social {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+.banner {
+  height: 60%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  /* background-size: cover; */
+  background-position: center;
+}
+#harshit .banner {
+  background: url("https://i.pinimg.com/474x/28/83/77/288377071af4720c25dfe583a8c21072--sleepy-hollow-autumn-forest.jpg");
+}
+#kartik .banner {
+  background: url("https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/cover-for-Hill-Stations-Near-Kottayam_20-Jan.jpg");
+}
+#nalin .banner {
+  background: url("https://cdn.britannica.com/87/101787-050-366F1F7B/Mount-Washington-White-Mountains-New-Hampshire.jpg");
+}
+#abhishek .banner {
+  background: url("https://wallpapercave.com/wp/xoCGn9Y.jpg");
+}
+.avatar {
+  width: 45%;
+  aspect-ratio: 1;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 0.5rem;
+  border-color: white;
+  position: relative;
+  left: 24%;
+  top: -30%;
+  z-index: 2;
+  /* background-size: contain; */
+  background-position: center;
+  background-size: auto 100%;
+}
+#harshit .avatar {
+  background-image: url("../images/harshit.jpg");
+}
+#kartik .avatar {
+  background-image: url("../images/kartik.jpg");
+}
+#abhishek .avatar {
+  background-image: url("../images/abhishek.jpg");
+}
+#nalin .avatar {
+  background-image: url("../images/nalin.jpg");
+}
+.card-body .name,
+.card-body .about {
+  margin: 1rem;
+  text-align: center;
 }
 
-.social-link {
-	margin: 5px;
-	text-decoration: none;
-	color: black;
+.card-body .name {
+  font-size: 1.5rem;
 }
 
-.social-link:hover {
-	color: royalblue;
-	font-weight: bold;
+.card-footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
 }
 
-.card-icon {
-	font-size: 2rem !important;
+.card-footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.75rem;
+  margin: 0 1rem;
 }
-
 /*---------------------------------------------------------------*/
 footer {
-	background-color: rgb(0, 0, 0);
-	color: white;
-	width: 100%;
-	display: flex;
+  margin-top: 3rem;
+  background-color: rgb(59, 58, 58);
+  color: whitesmoke;
 }
 
 .footer-text {
-	padding: 0.5rem 1.2rem;
-	width: 70%;
-	font-size: 1.2rem;
-}
-
-.footer-text h3,
-h4,
-h6 {
-	font-family: 'Roboto', sans-serif;
-	margin: 0.5rem;
-	font-weight: 200;
-}
-
-.footer-text h3 {
-	font-weight: 500;
-}
-
-.footer-text h4 {
-	font-weight: 400;
-}
-
-.footer-icons {
-	width: 50%;
-	padding-right: 1.2rem;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
 }
 
 #githubLink {
-	text-decoration: none;
-	color: white;
-}
-
-.fa-footer {
-	font-size: 3rem !important;
-	margin: 1rem;
+  color: white;
+  align-items: center;
+  font-size: 2rem;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Automated Symptom Analyser</title>
+    <title>Automated Medical Diagnosis</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -59,13 +59,13 @@
               </g>
             </svg>
           </a>
-          <h2 class="nav-title">Automated Medical Diagnosis</h2>
+          <h2 class="nav-title">Automatic Medical Diagnosis</h2>
         </div>
         <ul class="nav-list" id="nav-ul">
           <li class="nav-link"><a href="./index.html">Home</a></li>
-          <!-- <li class="nav-link">
-            <a target="_blank" href="./docs.pdf">Docs</a>
-          </li> -->
+          <li class="nav-link">
+            <a href="./docs.pdf">Docs</a>
+          </li>
           <li class="nav-link"><a href="./creators.html">Creators</a></li>
         </ul>
         <i class="fa fa-bars" id="hamburger"></i>
@@ -78,31 +78,30 @@
         <textarea
           title="input"
           class="codemirror-textarea editor input"
+          placeholder="Type patient ailments here in new line and press diagnose to see the results."
         ></textarea>
       </form>
 
       <div class="machine" id="machine-container">
-        <h3 id="machineCodeTitle">Probable disease</h3>
+        <h3 id="machineCodeTitle">Diagnosis</h3>
         <textarea title="output" class="output" readonly> </textarea>
       </div>
 
       <div class="button-div">
-        <button id="translate-button" type="button">Translate</button>
+        <button id="translate-button" type="button">Analyse</button>
       </div>
     </main>
 
     <footer>
       <div class="footer-text">
-        <h3>Computer Architecture & Organization</h3>
-        <h4>Semester Project Work</h4>
-        <h6>Netaji Subhas University of Technology</h6>
-        <h6>Dwarka, Delhi</h6>
+        <h3>Natural Language Processing</h3>
+        <h4>NLP Application Project</h4>
       </div>
       <div class="footer-icons">
         <a
           title="github"
           id="githubLink"
-          href="https://github.com/kartik-3513/final_cao_assembler"
+          href="https://github.com/kartik-3513/amd"
           target="_blank"
           ><i class="fa fa-github fa-footer" aria-hidden="true"></i
         ></a>
@@ -114,10 +113,7 @@
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="./plugin/codemirror/lib/codemirror.js"
-    ></script>
+
     <script src="https://use.fontawesome.com/98255e2a29.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
   </body>

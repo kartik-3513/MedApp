@@ -28,7 +28,7 @@ header {
 	align-items: center;
 }
 
-.nav-logo h1 {
+.nav-logo h2 {
 	margin: 0 0.5rem;
 	text-decoration: none;
 	color: black;
@@ -37,7 +37,7 @@ header {
 .nav-logo svg {
 	margin: 1rem 1.5rem 1rem;
 	text-decoration: none;
-	color: black;
+	color: white;
 	width: 3rem;
 }
 
@@ -53,11 +53,11 @@ ul.nav-list {
 
 ul.nav-list.active {
 	background-color: #9cdaf8;
-	background-image: linear-gradient(315deg, #9cdaf8 0%, #98fcbd 74%);
+	background-image: linear-gradient(to right, #49bfff, #2072ff);
 	display: flex;
 	z-index: 1000;
 	position: absolute;
-	top: 5rem;
+	top: 4rem;
 }
 
 .nav-link {
@@ -69,7 +69,7 @@ ul.nav-list.active {
 }
 
 .nav-link:hover {
-	border-bottom: 3px solid rgb(11, 38, 67);
+	border-bottom: 3px solid rgb(255, 255, 255);
 	transition: all 80ms ease;
 }
 
@@ -79,7 +79,7 @@ ul.nav-list.active {
 	font-size: 1.2rem;
 	line-height: 4rem;
 	text-decoration: none;
-	color: #000;
+	color: white;
 }
 
 .nav-title {
@@ -90,12 +90,25 @@ ul.nav-list.active {
 #hamburger {
 	font-size: 2rem !important;
 	margin: 1rem;
-	color: black;
+	color: white;
 	text-align: left;
 	cursor: pointer;
 	padding: 1.5rem;
 }
-
+@media only screen and (max-width: 576px) {
+	/* .nav-logo {
+		width: 90% !important;
+	} */
+	.nav-logo svg {
+		margin: 0rem !important;
+	}
+	.nav-title {
+		margin-left: 0rem;
+		white-space: nowrap;
+		font-size: 1rem;
+		overflow: hidden;
+	}
+}
 @media only screen and (min-width: 576px) {
 	#hamburger {
 		display: none;
