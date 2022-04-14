@@ -99,10 +99,9 @@ ul.nav-list.active {
     margin: 0rem !important;
   }
   .nav-title {
-    margin-left: 0rem;
+    margin-left: 0.5rem;
     white-space: nowrap;
     font-size: 1rem;
-    overflow: hidden;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -144,19 +143,19 @@ main {
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  align-items: center;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .card {
   position: relative;
-  display: inline-block;
+  display: inline-block;  
   height: 23rem;
   width: 15rem;
   background: whitesmoke;
   border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
 .top {

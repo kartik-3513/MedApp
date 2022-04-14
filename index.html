@@ -73,18 +73,18 @@
     </header>
 
     <main>
-      <form id="editor-form">
-        <h3 id="assemblyCodeTitle">Patient Ailments</h3>
+      <form id="input-form">
+        <h3 class="text-area-title">Patient Ailments</h3>
         <textarea
           title="input"
-          class="codemirror-textarea editor input"
+          id="input"
           placeholder="Type patient ailments here in new line and press diagnose to see the results."
         ></textarea>
       </form>
 
-      <div class="machine" id="machine-container">
-        <h3 id="machineCodeTitle">Diagnosis</h3>
-        <textarea title="output" class="output" readonly> </textarea>
+      <div class="output-div">
+        <h3 class="text-area-title">Diagnosis</h3>
+        <textarea title="output" id="output" readonly placeholder="Automatic diagnosis results will show here."></textarea>
       </div>
 
       <div class="button-div">
@@ -94,17 +94,11 @@
 
     <footer>
       <div class="footer-text">
-        <h3>Natural Language Processing</h3>
-        <h4>NLP Application Project</h4>
-      </div>
-      <div class="footer-icons">
-        <a
-          title="github"
+        <h4>NLP Application Project </h4> <span style="margin-left: 2rem;"><a
           id="githubLink"
           href="https://github.com/kartik-3513/amd"
-          target="_blank"
           ><i class="fa fa-github fa-footer" aria-hidden="true"></i
-        ></a>
+        ></a></span>
       </div>
     </footer>
 
@@ -113,8 +107,18 @@
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
       crossorigin="anonymous"
     ></script>
-
     <script src="https://use.fontawesome.com/98255e2a29.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
+    <script>
+      var activeNav = true;
+      document.getElementById("hamburger").addEventListener("click", () => {
+        activeNav = !activeNav;
+        if (activeNav) {
+          document.getElementById("nav-ul").classList.remove("active");
+        } else {
+          document.getElementById("nav-ul").classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>
