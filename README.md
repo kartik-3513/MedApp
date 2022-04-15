@@ -1,4 +1,15 @@
-# final_cao_assembler
-This features embedded code editor with personalised syntax highlighting according to Instruction Set of Basic Computer. 
-Type in code and hit translate to get machine code from assembly code.
-Embedded code editor is supported by Codemirror Code editor. Visit https://codemirror.net/ to read their documentation.
+# Ailment Predictor
+
+#### By 2019UCO1505 Nalin Semwal, 2019UCO1514 Abhishek Jha, 2019UCO1516 Kartik Goyal and 2019UCO1580 Harshit Gupta
+
+---
+
+#### NLP Assignment
+
+Try these examples:
+
+Try the following sentences
+
+- I have redness in my eyes and a strep throat
+- I have weak knees
+- I have weak knees that hurt a lot
