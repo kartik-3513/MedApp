@@ -12,7 +12,8 @@ async function requestDispatch(url) {
 		// console.log(res);
 		res = JSON.parse(res);
 		// formOutputString(res);
-		output_box.textContent = 'Your possible ailments are:\n' + res.toString();
+		output_box.textContent = 'Your possible ailments are:\n';
+		output_box.textContent += res.toString().split(",").forEach(ailment => output_box.textContent += ailment + "\n");
 	} catch (error) {
 		console.error(error);
 	}
