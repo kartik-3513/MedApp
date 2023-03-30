@@ -1,7 +1,7 @@
 let input_form = document.getElementById("input-form");
 let output_box = document.getElementById("output");
 let button = document.getElementById("translate-button");
-const URL = "https://medical-nlp.herokuapp.com/process";
+const URL = "https://medappapi.onrender.com/process";
 
 button.addEventListener("click", submitHandler);
 
