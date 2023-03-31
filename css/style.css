@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 /*---------------------------------------------------------------*/
 
@@ -216,7 +220,7 @@ textarea {
 /*---------------------------------------------------------------*/
 
 footer {
-  margin-top: 3rem;
+  margin-top: 1rem;
   background-color: rgb(59, 58, 58);
   color: whitesmoke;
 }

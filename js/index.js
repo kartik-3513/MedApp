@@ -12,7 +12,7 @@ async function requestDispatch(url) {
     // console.log(res);
     res = JSON.parse(res);
     // formOutputString(res);
-    output_box.textContent = "Your possible ailments are:\n";
+    output_box.textContent = "Your possible condition/diseases are:\n";
     res
       .toString()
       .split(",")
